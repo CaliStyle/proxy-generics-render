@@ -1,0 +1,48 @@
+{
+  "name": "proxy-generics-render",
+  "version": "0.0.1",
+  "description": "Proxy Generic Render markdown with YAML as HTML and Metadata",
+  "homepage": "https://cali-style.com",
+  "author": {
+    "name": "scott-wyatt",
+    "email": "scottwyatt86@gmail.com",
+    "url": "https://cali-style.com"
+  },
+  "main": "index.js",
+  "keywords": [
+    "proxy-engine",
+    "proxy-cart",
+    "proxy-generics",
+    "render",
+    "html",
+    "markdown-it",
+    "trailpack",
+    "trails",
+    "trailjs"
+  ],
+  "dependencies": {
+    "markdown-it": "^8.3.0",
+    "markdown-it-meta": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.0.0",
+    "eslint-config-trails": "^2",
+    "lodash": "^4.11.1",
+    "mocha": "^2.4.5",
+    "smokesignals": "^2.0.0",
+    "supertest": "^2.0.1",
+    "trailpack-proxy-generics": "^0.0.22",
+    "trails": "^2.0.0"
+  },
+  "scripts": {
+    "test": "eslint . && mocha"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "eslintConfig": {
+    "extends": "trails"
+  },
+  "repository": "git@github.com:CaliStyle/proxy-generics-render.git",
+  "license": "MIT"
+}
