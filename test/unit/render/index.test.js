@@ -17,9 +17,9 @@ describe('Render Generic', () => {
   })
   it('should render html to document and metadata', (done) => {
     RenderGenericService.render('# Hello World', RenderService)
-      .then(rate => {
-        assert.deepEqual(rate.meta, {})
-        assert.equal(rate.document, '<h1>Hello World</h1>\n')
+      .then(docObj => {
+        assert.deepEqual(docObj.meta, {})
+        assert.equal(docObj.document, '<h1>Hello World</h1>\n')
         done()
       })
       .catch(err => {
