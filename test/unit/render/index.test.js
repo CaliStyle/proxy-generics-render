@@ -26,5 +26,11 @@ describe('Render Generic', () => {
         done(err)
       })
   })
+  it('should render to document and meta', (done) => {
+    const docObj = RenderGenericService.renderSync('# Hello World', RenderService)
+    assert.deepEqual(docObj.meta, {})
+    assert.equal(docObj.document, '<h1>Hello World</h1>\n')
+    done()
+  })
 
 })
