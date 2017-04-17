@@ -53,4 +53,13 @@ module.exports = class ProxyGenericsRender {
     }
     return Promise.resolve(res)
   }
+  renderSync(document, options) {
+    const md = this._init(options)
+    const renderedDocument =  md.render(document)
+    const res = {
+      document: renderedDocument,
+      meta: md.meta || {}
+    }
+    return res
+  }
 }
